@@ -1,0 +1,199 @@
+/* Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Handjet', cursive;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(#1c1b1b,#4a4949);    
+    color: #fff;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 4rem;
+}
+.head h1 {
+    width: 50vw;
+    font-size: 1.5rem;
+}
+
+#add-task-container {
+    height: 6rem;
+    width: 45vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 3px;
+    position: absolute;
+    top: 10rem;
+}
+
+#input-task {
+    height: 50px;
+    background: none;
+    flex: 3;
+    margin: 0 0 0 10px;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    outline: 2px solid #fff;
+    color: #fff;
+}
+
+#add-btn {
+    height: 50px;
+    flex: 1;
+    margin: 0 10px 0 0;
+    font-size: 1rem;
+    border: none;
+    outline: 2px #1beb3e solid;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .1s;
+    color: #1beb3e;
+    background: none;
+}
+
+#add-btn:hover {
+    background-color: #1beb3e;
+    color: #fff;
+}
+
+
+/* Styling javaScript */
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 45vw;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 3px;
+    position: relative;
+    overflow: hidden;
+}
+
+.task li {
+    list-style: none;
+    color: #fff;
+    margin-left: 12px;
+    flex: 1;
+}
+
+.task button {
+    position: relative;
+    float: right;
+
+}
+
+.task .deleteTask {
+    padding: 10px 12px;
+    background: none;
+    border: none;
+    outline: 2px solid #eb1b1b;
+    cursor: pointer;
+    color: #eb1b1b;
+    border-radius: 8px;
+    margin-right: 10px;
+    transition: .2s;
+}
+
+.task .checkTask {
+    padding: 10px 12px;
+    background: none;
+    border: none;
+    outline: 2px solid #1beb3e;
+    color: #1beb3e;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 10px;
+    transition: .2s;
+}
+
+.deleteTask:hover {
+    background-color: #eb1b1b;
+    color: #fff;
+    outline: none;
+}
+.deleteTask:hover::after {
+    content: ' Are you sure? ';
+    transition: .2s;
+}
+.checkTask:hover::after {
+    content: ' have you done it?';
+    transition: .2s;
+}
+
+.checkTask:hover {
+    background-color: #1beb3e;
+    color: #fff;
+    outline: none;
+}
+
+#task-container {
+    position: absolute;
+    top: 16rem;
+}
+
+
+
+/* Shaking Animation */
+
+.shake-animation {
+    animation: shake 0.5s ease infinite;
+  }
+  
+  @keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(10px);
+    }
+  }
+
+
+.dog {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    gap: 2rem;
+    font-size: 1.2rem;
+}  
+
+.deletealert {
+    position: absolute;
+    bottom: 4.4rem;
+    left: 50%;
+    transform: translate(-50%);
+    background: #eb1b1b;
+    padding: 6px 12px;
+    border-radius: 8px;
+    box-shadow: 0 0 3px;
+    transition: 100ms ease-in-out;
+}

@@ -1,0 +1,89 @@
+/* Styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Handjet", cursive;
+  font-family: "Inter", sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(#1b1b1b, #505053);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  height: 100vh;
+  width: 100vw;
+}
+
+.navBar {
+  position: relative;
+  width: 60vw;
+}
+
+.navBar ul {
+  display: flex;
+}
+
+.navBar ul li {
+  list-style: none;
+  padding: 0 2rem;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.navBar ul li a {
+  transition: 0.1s;
+}
+.navBar ul li a:hover {
+  text-decoration: underline #afa895;
+}
+
+.container {
+  width: 60vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Page-2-Link {
+  color: #000;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 15px;
+  font-weight: 600;
+  background-color: #afa895;
+  outline-offset: 5px;
+  transition: 0.2s;
+}
+
+.Page-2-Link:hover {
+  outline: 2px solid #fff;
+}
+
+.container h1 {
+  width: 60vw;
+  position: relative;
+}
+
+.intro {
+  width: 60vw;
+  position: relative;
+  bottom: 1rem;
+}
+
+.intro p {
+  margin-top: 2rem;
+}
+
+.container img {
+  height: 240px;
+  border-radius: 10px;
+}

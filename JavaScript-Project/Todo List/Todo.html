@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styling Links -->
+    <link rel="stylesheet" type="text/css" href="Style-2.css" />
+    <!-- Global Font Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handjet&family=Inter&family=Nunito&family=Nunito+Sans:opsz@6..12&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome Links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Scheduling Your Lovely Day</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="head">
+        <h1>
+          Strategic Scheduling: "Maximizing Productivity Through To-Do Lists"
+          <span id="shakeimj">👋</span>
+        </h1>
+      </div>
+      <div id="add-task-container">
+        <input id="input-task" type="text" placeholder="Enter Your Task" />
+        <button id="add-btn">Add <i class="fa-solid fa-add"></i></button>
+      </div>
+      <div id="task-container"></div>
+    </div>
+
+    <div class="adddeletecontent"></div>
+
+    <div class="dog">
+      <div class="taskCollection" id="taskCollection">0 task added!</div>
+      <div class="taskCollectionComplete" id="taskCollectionComplete">
+        0 task completed!
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script-2.js"></script>
+  </body>
+</html>
